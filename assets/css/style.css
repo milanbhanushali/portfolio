@@ -1,3 +1,5 @@
+ 
+
 /* Variables */
 :root{
     --main-color: #e02f6b;
@@ -12,7 +14,8 @@
     --wight-alpha-25: rgba(255, 255, 255, 0.25);
     --backdrop-filter-blue: blur(5px);
 }
-/* main */
+
+/* Global seeting */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -60,7 +63,6 @@ section{
     margin: auto;
 }
 .container{
-    background-color: red;
     padding: 0 40px;
     width: 100%;
 }
@@ -75,17 +77,23 @@ section{
 /* Home Section ---------------------------*/
 .home-section{
     display: flex;
-}
-.home-text{
-    background-color: blue;
-}
-.home-img{
-    border-color: green;
+    padding: 120px 0;
 }
 .home-text,
 .home-img{
     width: 50%;
     padding: 15px;
+}
+.home-text p{
+    font-size: 18px;
+}
+.home-text h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.home-text h2{
+    font-size: 20px;
+    text-transform: capitalize;
 }
 .home-img .img-box{
     max-width: 360px;
