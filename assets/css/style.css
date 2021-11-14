@@ -1,7 +1,7 @@
- /* Fonts ---------------------------------*/
+ /* Fonts ---------------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Variables --------------------------*/
+/* Variables --------------------------------------------------------------------------------------------------*/
 :root{
     --main-color: #e02f6b;
     --blue: #0000ff;
@@ -16,7 +16,7 @@
     --backdrop-filter-blue: blur(5px);
 }
 
-/* Global seeting */
+/* Global seeting --------------------------------------------------------------------------------------------------------*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -85,7 +85,8 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-/* Custom Scrollbar */
+
+/* Custom Scrollbar --------------------------------------------------------------------------------------------------------*/
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -95,7 +96,8 @@ section{
 ::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
-/* Button */
+
+/* Button ---------------------------------------------------------------------------------------------------------*/
 .btn{
     line-height: 1.5;
     background-color: var(--wight-alpha-25);
@@ -133,7 +135,7 @@ section{
     color: var(--wight);
 }
 
-/* Home Section ---------------------------*/
+/* Home Section -------------------------------------------------------------------------------------------------------------------*/
 .home-section{
     display: flex;
     padding: 120px 0;
