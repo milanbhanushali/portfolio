@@ -1,4 +1,5 @@
- /* Fonts *-----------------------------/
+ /* Fonts ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Variables --------------------------*/
 :root{
@@ -30,6 +31,8 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     color: var(--blue-dark);
     line-height: 1.5;
     overflow-x: hidden;
@@ -50,7 +53,6 @@ body::before{
 img{
     max-width: 100%;
     vertical-align: middle;
-    min-height: 100%;
 }
 section{
     background-color: var(--wight-alpha-25);
@@ -100,11 +102,9 @@ section{
     background-color: var(--wight-alpha-25);
     border-radius: 50%;
     border: 8px solid var(--wight-alpha-25);
-    min-height: 100%;
+    margin: auto;
 }
 .home-img .img-box img{
     width: 100%;
-    height: 100%;
     border-radius: 50%;
-    min-height: 100%;
 }
