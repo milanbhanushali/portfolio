@@ -68,6 +68,7 @@ section{
     border: 1px solid var(--wight-alpha-40);
     min-height: 90vh;
     border-radius: 30px;
+    backdrop-filter: var(--backdrop-filter-blue);
 }
 .main{
     max-width: 1200px;
@@ -84,7 +85,16 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--wight);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
 /* Button */
 .btn{
     line-height: 1.5;
@@ -100,6 +110,27 @@ section{
     font-size: 16px;
     cursor: pointer;
     user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover{
+    color: var(--wight);
 }
 
 /* Home Section ---------------------------*/
@@ -123,6 +154,10 @@ section{
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 300;
+    margin: 0 0 30px;
+}
+.home-text .btn{
+    margin: 0 15px 15px 0;
 }
 .home-img .img-box{
     max-width: 360px;
