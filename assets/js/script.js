@@ -120,4 +120,4 @@ function portfolioItemDetails(portfolioItem)
 
 }
 
-/*----toggle navbar-----*/
+
