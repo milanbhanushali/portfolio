@@ -1,6 +1,6 @@
- 
+ /* Fonts *-----------------------------/
 
-/* Variables */
+/* Variables --------------------------*/
 :root{
     --main-color: #e02f6b;
     --blue: #0000ff;
@@ -50,6 +50,7 @@ body::before{
 img{
     max-width: 100%;
     vertical-align: middle;
+    min-height: 100%;
 }
 section{
     background-color: var(--wight-alpha-25);
@@ -99,10 +100,11 @@ section{
     background-color: var(--wight-alpha-25);
     border-radius: 50%;
     border: 8px solid var(--wight-alpha-25);
-    margin: auto;
+    min-height: 100%;
 }
 .home-img .img-box img{
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     min-height: 100%;
 }
