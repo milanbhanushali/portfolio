@@ -64,6 +64,11 @@
      max-width: 100%;
      vertical-align: middle;
  }
+
+ ul{
+    list-style: none;
+}
+
  section{
      background-color: var(--wight-alpha-25);
      border: 1px solid var(--wight-alpha-40);
