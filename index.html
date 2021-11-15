@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
      <!--Chart.js JS CDN--> 
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-     <script type="text/javascript" src="assets/js/cheli.js"></script>
+     
 </head>
 <body>
     <!-- Main Start -->
@@ -162,6 +162,7 @@
     <!--  Main End  -->
 
 <!-- Chart Javascript Start-->
+<script type="text/javascript" src="assets/js/script.js"></script>
  <script>
     const ctx = document.getElementById('myChart');
     const myChart = new Chart(ctx, {
@@ -203,24 +204,7 @@
         }
     });
 </script>
-<script>
-    const tabsContainer = document.querySelector(".about-tabs"),
-    aboutSection = document.querySelector(".about-section");
 
-    tabsContainer.addEventListener("click",(e)=>{
-    console.log(e);
-    if(e.target.classList.contains("tab-item") && !e.target.classList.contains("active"))
-    {
-        tabsContainer.querySelector(".active").classList.remove("active");
-        e.target.classList.add("active");
-        const target = e.target.getAttribute("data-target");
-        aboutSection.querySelector(".tab-content.active").classList.remove("active");
-        aboutSection.querySelector(target).classList.add("active");
-
-
-    }
-});
-</script>
 <!-- Chart Javascript End -->
 </body>
 </html>
