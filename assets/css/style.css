@@ -214,3 +214,15 @@
      font-size: 20px;
      margin: 20px 0;
  }
+ .about-text .skills{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .about-text .skill-item{
+     background-color: var(--wight-alpha-25);
+     border: 1px solid var(--wight-alpha-40);
+     padding: 5px 15px;
+     text-transform: capitalize;
+     margin: 0 10px 10px 0;
+     border-radius: 20px;
+ }
