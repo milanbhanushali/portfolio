@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
      <!--Chart.js JS CDN--> 
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script type="text/javascript" src="assets/js/cheli.js"></script>
 </head>
 <body>
     <!-- Main Start -->
@@ -63,8 +64,8 @@
                                  <div class="skill-item">Node JS</div>
                              </div>
                              <div class="about-tabs">
-                                 <button type="button" class="tab-item" data-target="#education">Education</button>
-                                 <button type="button" class="tab-item" data-target="#spi">SPI</button>
+                                 <button type="button" class="tab-item active" id="btnEducation" data-target="#education" >Education</button>
+                                 <button type="button" class="tab-item" id="btnExperience" data-target="#experience" >SPI</button>
                              </div>
 
                              <!-- Education Start -->
@@ -96,12 +97,20 @@
                              </div>
                              <!--  Education End  -->
 
+                             <!-- Experience Start -->
+                             <div class="tab-content" id="experience">
+                               <div class="chart">
+                                    <canvas id="myChart" width="80" height="25"></canvas>
+                                </div>
+                            </div>
+                             <!--  Experience End  -->
+
                              <!-- SPI Start -->
-                             <div class="tab-content">
+                             <!-- <div class="tab-content">
                                 <div class="chart">
                                     <canvas id="myChart" width="80" height="25"></canvas>
                                 </div>
-                             </div>
+                             </div> -->
                              <!--  SPI End  -->
 
                              <a href="#" class="btn">Resume</a>
@@ -153,7 +162,7 @@
     <!--  Main End  -->
 
 <!-- Chart Javascript Start-->
-<script>
+ <script>
     const ctx = document.getElementById('myChart');
     const myChart = new Chart(ctx, {
         type: 'bar',
@@ -193,7 +202,25 @@
             }
         }
     });
-    </script>
+</script>
+<script>
+    const tabsContainer = document.querySelector(".about-tabs"),
+    aboutSection = document.querySelector(".about-section");
+
+    tabsContainer.addEventListener("click",(e)=>{
+    console.log(e);
+    if(e.target.classList.contains("tab-item") && !e.target.classList.contains("active"))
+    {
+        tabsContainer.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+        const target = e.target.getAttribute("data-target");
+        aboutSection.querySelector(".tab-content.active").classList.remove("active");
+        aboutSection.querySelector(target).classList.add("active");
+
+
+    }
+});
+</script>
 <!-- Chart Javascript End -->
 </body>
 </html>
