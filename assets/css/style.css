@@ -250,7 +250,31 @@
      font-weight: 500;
      margin: 0 30px 0 0;
      position: relative;
+     opacity: 0.5;
+     transition: all 0.3s ease;
  }
  .about-tabs .tab-item:last-child{
      margin: 0;
+ }
+ .about-tabs .tab-item::before{
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 0%;
+     height: 1px;
+     background-color: var(--blue-dark);
+     transition: width 0.3s ease;
+ }
+ .about-tabs .tab-item:hover::before{
+     width: 100%;
+ }
+ .about-tabs .tab-item.active::before{
+     width: 100%;
+     background-color: var(--main-color);
+ }
+ .about-tabs .tab-item.active{
+     color: var(--main-color);
+     opacity: 1;
+     cursor: auto;
  }
