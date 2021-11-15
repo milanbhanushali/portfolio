@@ -58,7 +58,7 @@ document.addEventListener("click",(e)=>{
     }
 });
 
-/*------------------------About Table-----------------------*/
+/*------------------------ About Tabs -----------------------*/
 const tabsContainer = document.querySelector(".about-tabs");
 aboutSection = document.querySelector(".about-section");
 tabsContainer.addEventListener("click",(e)=>{
@@ -66,8 +66,8 @@ tabsContainer.addEventListener("click",(e)=>{
     {
         tabsContainer.querySelector(".active").classList.remove("active");
         e.target.classList.add("active");
-        const target = e.target.getAttribute("date-target");
-        aboutSection.querySelector(".tab-content-active").classList.remove("active");
+        const target = e.target.getAttribute("data-target");
+        aboutSection.querySelector(".tab-content.active").classList.remove("active");
         aboutSection.querySelector(target).classList.add("active");
 
 
