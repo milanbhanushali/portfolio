@@ -10,6 +10,7 @@ console.log("Haale che")
 // });
 
 
+//#region toggle navbar
 // /*----toggle navbar-----*/
 // const navToggler = document.querySelector(".nav-toggler");
 // navToggler.addEventListener("click",()=>{
@@ -27,6 +28,10 @@ console.log("Haale che")
 //     document.querySelector(".header").classList.toggle("active");
 // }
 
+
+//#endregion
+
+//#region  active section
 // /*--------Active Section-----------------*/
 // document.addEventListener("click",(e)=>{
 //     if(e.target.classList.contains("link-item") && e.target.hash !== "" )
@@ -58,9 +63,9 @@ console.log("Haale che")
 //     }
 // });
 
-/*------------------------ About Tabs -----------------------*/
+//#endregion
 
-
+//#region About Tabs
 let tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
 
@@ -80,8 +85,9 @@ tabsContainer.addEventListener("click",(e)=>{
     }
 });
 
+//#endregion
 
-/*---------------portflolio Item Details popup-----------------------*/
+//#region portflolio Item Details popup 
 document.addEventListener("click",(e)=>{
     if(e.target.classList.contains("view-project-btn"))
     {
@@ -91,6 +97,7 @@ document.addEventListener("click",(e)=>{
         portfolioItemDetails(e.target.parentElement);
     }
 });
+
 
 function togglePortfolioPopup()
 {
@@ -127,7 +134,9 @@ function portfolioItemDetails(portfolioItem)
 
 }
 
+//#endregion
 
+//#region mychart
     const ctx = document.getElementById('myChart');
     const myChart = new Chart(ctx, {
         type: 'bar',
@@ -167,3 +176,8 @@ function portfolioItemDetails(portfolioItem)
             }
         }
     });
+
+//#endregion
+
+
+   

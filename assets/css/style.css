@@ -1,7 +1,9 @@
- /* Fonts ---------------------------------------------------------------------------------------------------*/
+ /* #region Fonts */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
- /* Variables --------------------------------------------------------------------------------------------------*/
+ /*#endregion*/
+
+ /* #region Variables */
  :root{
      --main-color: #e02f6b;
      --blue: #0000ff;
@@ -15,8 +17,10 @@
      --wight-alpha-25: rgba(255, 255, 255, 0.25);
      --backdrop-filter-blue: blur(5px);
  }
+
+ /*#endregion*/
  
- /* Global seeting --------------------------------------------------------------------------------------------------------*/
+ /* #region Global seeting */
  *{
      box-sizing: border-box;
      padding: 0;
@@ -108,7 +112,10 @@
  .sec-padding{
      padding: 80px 0;
  }
- /* Section Title   -----------------------------------------------------------------------------------------------*/
+
+ /*#endregion*/
+
+ /* #region Section Title */
  .section-title{
      padding: 0 15px;
      width: 100%;
@@ -119,7 +126,10 @@
      font-size: 40px;
      text-transform: capitalize;
  }
- /* Custom Scrollbar -----------------------------------------------------------------------------------------------*/
+
+ /*#endregion*/
+
+ /* #region Custom Scrollbar */
  ::-webkit-scrollbar{
      width: 5px;
  }
@@ -129,8 +139,10 @@
  ::-webkit-scrollbar-thumb{
      background-color: var(--main-color);
  }
+
+ /*#endregion*/
  
- /* Button ---------------------------------------------------------------------------------------------------------*/
+ /* #region Button */
  button{
      font-family: inherit;
      user-select: none;
@@ -171,8 +183,10 @@
  .btn:hover{
      color: var(--wight);
  }
+
+ /*#endregion*/
  
- /* Home Section -------------------------------------------------------------------------------------------------------------------*/
+ /* #region Home Section */
  .home-section{
      display: flex;
      padding: 120px 0;
@@ -210,7 +224,9 @@
      border-radius: 50%;
  }
 
-/*-----------------------portfolio section---------------------------------------------------------------*/
+ /*#endregion*/
+
+/* #region portfolio section*/
 
 .portfolio-section{
     padding-bottom: 50px;
@@ -238,7 +254,9 @@
     display: none; 
 }
 
-/*---------------------------portfolio popup------------------------------------*/
+/*#endregion*/
+
+/*#region portfolio popup*/
 .portfolio-popup{
     position: fixed;
     left: 0;
@@ -315,7 +333,9 @@
     color:var(--main-color);
 }
 
- /* About Section -------------------------------------------------------------------------------------------------------------------*/
+/*#endregion*/
+
+ /*#region About Section */
  .about-img{
      width: 40%;
      padding: 0 15px;
@@ -447,7 +467,9 @@
     font-weight: 400;
 } 
 
-/*------------------------------------------contact section------------------------------------------*/
+/* #endregion*/
+
+/*#region contact section*/
 
 .contact-form,
 .contact-info{
@@ -524,3 +546,4 @@
     color: var(--white);
     background-color: var(--main-color);
 }
+/*#endregion*/
