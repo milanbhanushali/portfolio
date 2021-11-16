@@ -11,22 +11,22 @@ console.log("Haale che")
 
 
 //#region toggle navbar
-// /*----toggle navbar-----*/
-// const navToggler = document.querySelector(".nav-toggler");
-// navToggler.addEventListener("click",()=>{
-//     hideSection();
-//     toggleNavbar();
-//     document.body.classList.toggle("hide-scrolling");
-// });
+/*----toggle navbar-----*/
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click",()=>{
+    hideSection();
+    toggleNavbar();
+    document.body.classList.toggle("hide-scrolling");
+});
 
-// function hideSection()
-// {
-//     console.querySelector("selection.active").classList.toggle("fade-out");
-// }
-// function toggleNavbar()
-// {
-//     document.querySelector(".header").classList.toggle("active");
-// }
+function hideSection()
+{
+    document.querySelector("section.active").classList.toggle("fade-out");
+}
+function toggleNavbar()
+{
+    document.querySelector(".header").classList.toggle("active");
+}
 
 
 //#endregion
