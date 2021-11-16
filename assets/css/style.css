@@ -198,8 +198,8 @@
  }
 
  /*#endregion*/
- 
- /* Animation Keyframes */
+
+ /* #region Animation Keyframes */
 @keyframes fadeIn{
     0%{
         opacity: 0;
@@ -231,6 +231,58 @@
     50%{
         transform: translateY(0px);
     }
+}
+/*#endregion*/
+
+/* #region backdrop */
+.bg-circles{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg-circles div{
+    position: absolute;
+    border-radius: 50%;
+}
+.bg-circles .circle-1{
+    height: 60px;
+    width: 60px;
+    background-color: var(--blue-dark);
+    left: 5%;
+    top: 10%;
+    opacity: 0.3;
+    animation: zoomInOut 8s linear infinite;
+}
+.bg-circles .circle-2{
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    left: 30%;
+    top: 50%;
+    opacity: 0.4;
+    animation: bounceTop 8s ease-in-out infinite;
+}
+.bg-circles .circle-3{
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    left: 40%;
+    top: -60%;
+    opacity: 0.6;
+    animation: bounceTop 8s ease-in-out infinite;
+}
+.bg-circles .circle-4{
+    height: 50px;
+    width: 50px;
+    background-color: var(--orange);
+    left: -30%;
+    top: 80%;
+    opacity: 0.6;
+    animation: bounceTop 8s ease-in-out infinite;
 }
 /*#endregion*/
 
