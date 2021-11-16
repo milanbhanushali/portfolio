@@ -85,7 +85,7 @@ tabsContainer.addEventListener("click",(e)=>{
 document.addEventListener("click",(e)=>{
     if(e.target.classList.contains("view-project-btn"))
     {
-        console.log("HI");
+        // console.log("HI");
         togglePortfolioPopup()
         document.querySelector(".portfolio-popup").scrollTo(0,0);
         portfolioItemDetails(e.target.parentElement);
@@ -99,7 +99,7 @@ function togglePortfolioPopup()
     document.querySelector(".main").classList.toggle("fade-out");
 }
 
-document.querySelector(".pp-close".addEventListener("click",togglePortfolioPopup));
+document.querySelector(".pp-close").addEventListener("click",togglePortfolioPopup);
 
 
 // hide popup when clicking outside of it
