@@ -268,7 +268,7 @@
 .bg-circles .circle-1{
     height: 60px;
     width: 60px;
-    background-color: var(--blue-dark);
+    background-color: var(--blue);
     left: 5%;
     top: 10%;
     opacity: 0.3;
@@ -287,19 +287,18 @@
     height: 120px;
     width: 120px;
     background-color: var(--white);
-    left: 40%;
-    top: -60%;
+    left: 95%;
+    top: 40%;
     opacity: 0.6;
-    animation: bounceTop 8s ease-in-out infinite;
 }
 .bg-circles .circle-4{
     height: 50px;
     width: 50px;
     background-color: var(--orange);
-    left: -30%;
+    left: -3%;
     top: 80%;
     opacity: 0.6;
-    animation: bounceTop 8s ease-in-out infinite;
+   
 }
 /*#endregion*/
 
