@@ -290,7 +290,6 @@
     left: 40%;
     top: -60%;
     opacity: 0.6;
-    animation: bounceTop 8s ease-in-out infinite;
 }
 .bg-circles .circle-4{
     height: 50px;
@@ -299,7 +298,6 @@
     left: -30%;
     top: 80%;
     opacity: 0.6;
-    animation: bounceTop 8s ease-in-out infinite;
 }
 /*#endregion*/
 
